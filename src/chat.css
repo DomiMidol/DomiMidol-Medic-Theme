@@ -1,1 +1,150 @@
+/* ==========================================================
+   DomiMidol Medic Theme
+   chat.css
+   ========================================================== */
 
+/* ---------- Chat-Hintergrund ---------- */
+
+.chatContent_f75fb0,
+.chat_f75fb0,
+.messagesWrapper__36d07 {
+    background: transparent !important;
+}
+
+/* ---------- Nachrichten ---------- */
+
+.message__80c10 {
+    margin: 8px 12px;
+    padding: 10px 14px;
+    border-radius: var(--dm-radius);
+    background: rgba(20,20,20,.40);
+    transition: background-color var(--dm-speed);
+}
+
+.message__80c10:hover {
+    background: rgba(30,30,30,.60);
+}
+
+/* ---------- Erwähnungen ---------- */
+
+.mentioned__5126c {
+    border-left: 4px solid var(--dm-accent);
+    background: rgba(211,47,47,.15);
+}
+
+/* ---------- Antwort ---------- */
+
+.repliedMessage__636d2 {
+    opacity: .85;
+}
+
+/* ---------- Benutzername ---------- */
+
+.username__703b9 {
+    color: var(--dm-text);
+    font-weight: 600;
+}
+
+/* ---------- Zeit ---------- */
+
+.timestamp_cdbd93 {
+    color: var(--dm-text-muted);
+}
+
+/* ---------- Nachrichteninhalt ---------- */
+
+.markup__75297 {
+    color: var(--dm-text);
+    line-height: 1.45;
+}
+
+/* ---------- Links ---------- */
+
+.anchor_edefb8 {
+    color: var(--dm-accent);
+}
+
+.anchor_edefb8:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Code ---------- */
+
+code {
+    border-radius: 6px;
+}
+
+pre {
+    border-radius: var(--dm-radius-small);
+}
+
+/* ---------- Embeds ---------- */
+
+.embedFull__14919 {
+    border-radius: var(--dm-radius);
+    overflow: hidden;
+}
+
+/* ---------- Bilder ---------- */
+
+.imageWrapper__178ee img {
+    border-radius: var(--dm-radius-small);
+}
+
+/* ---------- Dateianhänge ---------- */
+
+.attachment__06ca5 {
+    border-radius: var(--dm-radius-small);
+}
+
+/* ---------- Reaktionen ---------- */
+
+.reaction_f61c73 {
+    border-radius: 999px;
+    transition: background-color var(--dm-speed);
+}
+
+.reaction_f61c73:hover {
+    background: rgba(211,47,47,.25);
+}
+
+/* ---------- Chat-Eingabe ---------- */
+
+.channelTextArea__74017 {
+    border-radius: var(--dm-radius);
+    background: rgba(25,25,25,.65);
+}
+
+/* ---------- Textfeld ---------- */
+
+.slateTextArea_ec4baf {
+    color: white;
+}
+
+/* ---------- Thread ---------- */
+
+.container__01ae2 {
+    background: rgba(15,15,15,.45);
+}
+
+/* ---------- Neue Nachrichten ---------- */
+
+.newMessagesBar__8b1f3 {
+    background: var(--dm-accent);
+}
+
+/* ---------- "Zum Ende springen" ---------- */
+
+.jumpToPresentBar__0f481 {
+    background: var(--dm-accent);
+}
+
+/* ---------- Hover-Menü ---------- */
+
+.buttons__5126c {
+    opacity: .85;
+}
+
+.buttons__5126c:hover {
+    opacity: 1;
+}
