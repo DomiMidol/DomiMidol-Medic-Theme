@@ -1,1 +1,174 @@
+/* ==========================================================
+   DomiMidol Medic Theme
+   sidebar.css
+   ========================================================== */
 
+/* ---------- Serverleiste ---------- */
+
+.guilds_c48ade {
+    background: rgba(12,12,12,.55) !important;
+    backdrop-filter: blur(var(--dm-blur));
+}
+
+/* Server-Icons */
+
+.wrapper__6e9f8 {
+    transition:
+        transform var(--dm-speed),
+        border-radius var(--dm-speed);
+}
+
+.wrapper__6e9f8:hover {
+    transform: scale(1.08);
+}
+
+/* Aktiver Server */
+
+.selected__9800b .wrapper__6e9f8 {
+    box-shadow: 0 0 10px rgba(211,47,47,.45);
+}
+
+/* ---------- Kanalliste ---------- */
+
+.sidebarList_c48ade,
+.sidebar_c48ade {
+    background: rgba(18,18,18,.45) !important;
+}
+
+/* Kategorien */
+
+.containerDefault__29444 {
+    margin-top: 10px;
+}
+
+/* Kategorie-Name */
+
+.name__29444 {
+    color: var(--dm-text-muted);
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+/* ---------- Kanal ---------- */
+
+.link__2ea32 {
+    border-radius: var(--dm-radius-small);
+    margin: 2px 8px;
+    transition:
+        background-color var(--dm-speed),
+        color var(--dm-speed);
+}
+
+/* Hover */
+
+.link__2ea32:hover {
+    background: rgba(211,47,47,.15);
+}
+
+/* Aktiver Kanal */
+
+.modeSelected__2ea32 .link__2ea32 {
+    background: rgba(211,47,47,.28);
+}
+
+/* Kanalname */
+
+.name__2ea32 {
+    color: var(--dm-text);
+}
+
+/* ---------- Voice Channel ---------- */
+
+.modeConnected__2ea32 .link__2ea32 {
+    background: rgba(50,160,80,.18);
+}
+
+/* ---------- Voice User ---------- */
+
+.avatarContainer__91a9d {
+    border-radius: 999px;
+}
+
+/* ---------- Suchleiste ---------- */
+
+.searchBar__35e86 {
+    border-radius: var(--dm-radius-small);
+}
+
+/* ---------- Benutzerpanel ---------- */
+
+.panels_c48ade {
+    background: rgba(15,15,15,.70);
+    backdrop-filter: blur(var(--dm-blur));
+}
+
+/* Avatar */
+
+.avatarWrapper__37e49 {
+    border-radius: 999px;
+}
+
+/* Hover */
+
+.avatarWrapper__37e49:hover {
+    background: rgba(211,47,47,.15);
+}
+
+/* Benutzername */
+
+.title_b6c092 {
+    color: var(--dm-text);
+}
+
+/* Status */
+
+.subtext__339d0 {
+    color: var(--dm-text-muted);
+}
+
+/* ---------- Buttons ---------- */
+
+.button__67645 {
+    border-radius: 10px;
+    transition:
+        background-color var(--dm-speed),
+        transform var(--dm-speed);
+}
+
+.button__67645:hover {
+    transform: scale(1.05);
+}
+
+/* ---------- Server hinzufügen ---------- */
+
+.circleIconButton__5bc7e {
+    transition:
+        transform var(--dm-speed);
+}
+
+.circleIconButton__5bc7e:hover {
+    transform: rotate(8deg) scale(1.08);
+}
+
+/* ---------- Ungelesene Nachrichten ---------- */
+
+.unread__2ea32 {
+    background: var(--dm-accent);
+}
+
+/* ---------- Mention Badge ---------- */
+
+.numberBadge__40d6f {
+    background: var(--dm-accent) !important;
+}
+
+/* ---------- Home Button ---------- */
+
+.childWrapper__6e9f8 {
+    transition: background-color var(--dm-speed);
+}
+
+.childWrapper__6e9f8:hover {
+    background: rgba(211,47,47,.18);
+}
