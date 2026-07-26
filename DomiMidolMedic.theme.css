@@ -1,8 +1,8 @@
 /**
  * @name DomiMidol Medic
  * @author DomiMidol
- * @version 1.0.0
- * @description Premium EMS Theme (Black/Red Glass)
+ * @version 2.0.0
+ * @description Performance Edition - Black & Red Glass UI
  * @source https://github.com/DomiMidol/DomiMidol-Medic-Theme
  * @updateUrl https://raw.githubusercontent.com/DomiMidol/DomiMidol-Medic-Theme/main/DomiMidolMedic.theme.css
  */
@@ -10,357 +10,207 @@
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/BasicBackground/BasicBackground.css");
 
 :root{
-  --accentcolor:220,30,30;
-  --transparencycolor:0,0,0;
-  --transparencyalpha:0.18;
-  --messagetransparency:0.35;
-  --guildchanneltransparency:0.18;
-  --memberlistransparency:0.15;
-  --backdrop:rgba(0,0,0,.45);
-  --background:url("https://raw.githubusercontent.com/DomiMidol/DomiMidol-Medic-Theme/main/assets/DomiMidol%20Medic%20Community%20Background.png");
-  --backgroundblur:3px;
-  --backgroundsize:cover;
-  --backdropblur:8px;
-  --popoutblur:8px;
-  --backdropsize:cover;
-  --popoutsize:cover;
-  --version1_0_5:none;
+
+/* ===== PERFORMANCE SETTINGS ===== */
+
+--background:url("https://raw.githubusercontent.com/DomiMidol/DomiMidol-Medic-Theme/main/assets/DomiMidol%20Medic%20Community%20Background.png");
+--backgroundsize:cover;
+
+--accentcolor:220,35,35;
+
+--transparencycolor:10,10,10;
+--transparencyalpha:0.14;
+
+--messagetransparency:0.20;
+--guildchanneltransparency:0.16;
+--memberlistransparency:0.10;
+
+--backgroundblur:2px;
+--backdropblur:3px;
+--popoutblur:3px;
+
+--backdrop:rgba(0,0,0,.35);
+
+--radius:14px;
 }
 
-:root{
- --radius:16px;
- --shadow:0 8px 24px rgba(0,0,0,.35);
-}
-
-.visual-refresh .appMount,
-.visual-refresh .bg__12180{
-  background:transparent!important;
-}
+/* ---------- Panels ---------- */
 
 [class*="sidebar"],
-[class*="container"],
 [class*="membersWrap"],
 [class*="panels"],
 [class*="chatContent"],
-[class*="content"],
-[class*="page"],
-[class*="applicationStore"],
-[class*="shop"],
-[class*="containerDefault"],
-[class*="container_"],
-[class*="scroller"]{
-  background:rgba(15,15,15,.28)!important;
-  backdrop-filter:blur(10px);
+[class*="container"],
+[class*="content"]{
+    background:rgba(15,15,15,.18)!important;
+    backdrop-filter:blur(3px)!important;
 }
+
+/* ---------- Guild Bar ---------- */
 
 [class*="guilds"]{
-  background:rgba(0,0,0,.22)!important;
+    background:rgba(0,0,0,.14)!important;
 }
 
-[class*="membersWrap"]{
-  background:rgba(0,0,0,.16)!important;
+/* ---------- Rounded UI ---------- */
+
+button,
+input,
+textarea,
+[class*="searchBar"],
+[class*="channelTextArea"],
+[class*="container"]{
+    border-radius:14px!important;
 }
 
-[class*="channelTextArea"]{
-  background:rgba(20,20,20,.55)!important;
-  border-radius:var(--radius)!important;
+/* ---------- Accent ---------- */
+
+:where(button,[role="button"]):hover{
+    box-shadow:0 0 8px rgba(220,30,30,.25)!important;
 }
 
-button{
-  border-radius:12px!important;
-  transition:.2s ease!important;
+/* ---------- Selected ---------- */
+
+[aria-selected="true"]{
+    background:rgba(220,30,30,.16)!important;
 }
 
-button:hover{
-  box-shadow:0 0 12px rgba(220,30,30,.45)!important;
+/* ---------- Scrollbar ---------- */
+
+::-webkit-scrollbar{
+ width:8px;
 }
 
-[class*="interactive"]:hover,
-[class*="clickable"]:hover{
-  background:rgba(220,30,30,.12)!important;
-}
-
-::-webkit-scrollbar{width:8px}
 ::-webkit-scrollbar-thumb{
-  background:rgb(220,30,30);
-  border-radius:99px;
+ background:#dc2323;
+ border-radius:99px;
 }
 
-img{
-  border-radius:10px;
+/* ---------- User Panel ---------- */
+
+[class*="panels"]{
+ border-top:1px solid rgba(220,30,30,.18);
 }
 
-[class*="avatar"]{
-  transition:.2s;
-}
-[class*="avatar"]:hover{
-  filter:drop-shadow(0 0 8px rgba(220,30,30,.55));
-}
+/* ---------- Remove heavy animations ---------- */
 
 *{
-  transition:
-    background-color .18s ease,
-    color .18s ease,
-    border-color .18s ease,
-    box-shadow .18s ease;
+ transition:
+ color .12s ease,
+ background-color .12s ease,
+ border-color .12s ease;
 }
 
-/* ---------- Optional custom colors ---------- */
-:root{
- --online: #43b581;
- --idle: #faa61a;
- --dnd: #f04747;
- --streaming:#9146ff;
+/* ---------- Images ---------- */
+
+img{
+ border-radius:12px;
 }
 
-/* End of v1.0 */
-/* Custom placeholder section 1 */
-/* Custom placeholder section 2 */
-/* Custom placeholder section 3 */
-/* Custom placeholder section 4 */
-/* Custom placeholder section 5 */
-/* Custom placeholder section 6 */
-/* Custom placeholder section 7 */
-/* Custom placeholder section 8 */
-/* Custom placeholder section 9 */
-/* Custom placeholder section 10 */
-/* Custom placeholder section 11 */
-/* Custom placeholder section 12 */
-/* Custom placeholder section 13 */
-/* Custom placeholder section 14 */
-/* Custom placeholder section 15 */
-/* Custom placeholder section 16 */
-/* Custom placeholder section 17 */
-/* Custom placeholder section 18 */
-/* Custom placeholder section 19 */
-/* Custom placeholder section 20 */
-/* Custom placeholder section 21 */
-/* Custom placeholder section 22 */
-/* Custom placeholder section 23 */
-/* Custom placeholder section 24 */
-/* Custom placeholder section 25 */
-/* Custom placeholder section 26 */
-/* Custom placeholder section 27 */
-/* Custom placeholder section 28 */
-/* Custom placeholder section 29 */
-/* Custom placeholder section 30 */
-/* Custom placeholder section 31 */
-/* Custom placeholder section 32 */
-/* Custom placeholder section 33 */
-/* Custom placeholder section 34 */
-/* Custom placeholder section 35 */
-/* Custom placeholder section 36 */
-/* Custom placeholder section 37 */
-/* Custom placeholder section 38 */
-/* Custom placeholder section 39 */
-/* Custom placeholder section 40 */
-/* Custom placeholder section 41 */
-/* Custom placeholder section 42 */
-/* Custom placeholder section 43 */
-/* Custom placeholder section 44 */
-/* Custom placeholder section 45 */
-/* Custom placeholder section 46 */
-/* Custom placeholder section 47 */
-/* Custom placeholder section 48 */
-/* Custom placeholder section 49 */
-/* Custom placeholder section 50 */
-/* Custom placeholder section 51 */
-/* Custom placeholder section 52 */
-/* Custom placeholder section 53 */
-/* Custom placeholder section 54 */
-/* Custom placeholder section 55 */
-/* Custom placeholder section 56 */
-/* Custom placeholder section 57 */
-/* Custom placeholder section 58 */
-/* Custom placeholder section 59 */
-/* Custom placeholder section 60 */
-/* Custom placeholder section 61 */
-/* Custom placeholder section 62 */
-/* Custom placeholder section 63 */
-/* Custom placeholder section 64 */
-/* Custom placeholder section 65 */
-/* Custom placeholder section 66 */
-/* Custom placeholder section 67 */
-/* Custom placeholder section 68 */
-/* Custom placeholder section 69 */
-/* Custom placeholder section 70 */
-/* Custom placeholder section 71 */
-/* Custom placeholder section 72 */
-/* Custom placeholder section 73 */
-/* Custom placeholder section 74 */
-/* Custom placeholder section 75 */
-/* Custom placeholder section 76 */
-/* Custom placeholder section 77 */
-/* Custom placeholder section 78 */
-/* Custom placeholder section 79 */
-/* Custom placeholder section 80 */
-/* Custom placeholder section 81 */
-/* Custom placeholder section 82 */
-/* Custom placeholder section 83 */
-/* Custom placeholder section 84 */
-/* Custom placeholder section 85 */
-/* Custom placeholder section 86 */
-/* Custom placeholder section 87 */
-/* Custom placeholder section 88 */
-/* Custom placeholder section 89 */
-/* Custom placeholder section 90 */
-/* Custom placeholder section 91 */
-/* Custom placeholder section 92 */
-/* Custom placeholder section 93 */
-/* Custom placeholder section 94 */
-/* Custom placeholder section 95 */
-/* Custom placeholder section 96 */
-/* Custom placeholder section 97 */
-/* Custom placeholder section 98 */
-/* Custom placeholder section 99 */
-/* Custom placeholder section 100 */
-/* Custom placeholder section 101 */
-/* Custom placeholder section 102 */
-/* Custom placeholder section 103 */
-/* Custom placeholder section 104 */
-/* Custom placeholder section 105 */
-/* Custom placeholder section 106 */
-/* Custom placeholder section 107 */
-/* Custom placeholder section 108 */
-/* Custom placeholder section 109 */
-/* Custom placeholder section 110 */
-/* Custom placeholder section 111 */
-/* Custom placeholder section 112 */
-/* Custom placeholder section 113 */
-/* Custom placeholder section 114 */
-/* Custom placeholder section 115 */
-/* Custom placeholder section 116 */
-/* Custom placeholder section 117 */
-/* Custom placeholder section 118 */
-/* Custom placeholder section 119 */
-/* Custom placeholder section 120 */
-/* Custom placeholder section 121 */
-/* Custom placeholder section 122 */
-/* Custom placeholder section 123 */
-/* Custom placeholder section 124 */
-/* Custom placeholder section 125 */
-/* Custom placeholder section 126 */
-/* Custom placeholder section 127 */
-/* Custom placeholder section 128 */
-/* Custom placeholder section 129 */
-/* Custom placeholder section 130 */
-/* Custom placeholder section 131 */
-/* Custom placeholder section 132 */
-/* Custom placeholder section 133 */
-/* Custom placeholder section 134 */
-/* Custom placeholder section 135 */
-/* Custom placeholder section 136 */
-/* Custom placeholder section 137 */
-/* Custom placeholder section 138 */
-/* Custom placeholder section 139 */
-/* Custom placeholder section 140 */
-/* Custom placeholder section 141 */
-/* Custom placeholder section 142 */
-/* Custom placeholder section 143 */
-/* Custom placeholder section 144 */
-/* Custom placeholder section 145 */
-/* Custom placeholder section 146 */
-/* Custom placeholder section 147 */
-/* Custom placeholder section 148 */
-/* Custom placeholder section 149 */
-/* Custom placeholder section 150 */
-/* Custom placeholder section 151 */
-/* Custom placeholder section 152 */
-/* Custom placeholder section 153 */
-/* Custom placeholder section 154 */
-/* Custom placeholder section 155 */
-/* Custom placeholder section 156 */
-/* Custom placeholder section 157 */
-/* Custom placeholder section 158 */
-/* Custom placeholder section 159 */
-/* Custom placeholder section 160 */
-/* Custom placeholder section 161 */
-/* Custom placeholder section 162 */
-/* Custom placeholder section 163 */
-/* Custom placeholder section 164 */
-/* Custom placeholder section 165 */
-/* Custom placeholder section 166 */
-/* Custom placeholder section 167 */
-/* Custom placeholder section 168 */
-/* Custom placeholder section 169 */
-/* Custom placeholder section 170 */
-/* Custom placeholder section 171 */
-/* Custom placeholder section 172 */
-/* Custom placeholder section 173 */
-/* Custom placeholder section 174 */
-/* Custom placeholder section 175 */
-/* Custom placeholder section 176 */
-/* Custom placeholder section 177 */
-/* Custom placeholder section 178 */
-/* Custom placeholder section 179 */
-/* Custom placeholder section 180 */
-/* Custom placeholder section 181 */
-/* Custom placeholder section 182 */
-/* Custom placeholder section 183 */
-/* Custom placeholder section 184 */
-/* Custom placeholder section 185 */
-/* Custom placeholder section 186 */
-/* Custom placeholder section 187 */
-/* Custom placeholder section 188 */
-/* Custom placeholder section 189 */
-/* Custom placeholder section 190 */
-/* Custom placeholder section 191 */
-/* Custom placeholder section 192 */
-/* Custom placeholder section 193 */
-/* Custom placeholder section 194 */
-/* Custom placeholder section 195 */
-/* Custom placeholder section 196 */
-/* Custom placeholder section 197 */
-/* Custom placeholder section 198 */
-/* Custom placeholder section 199 */
-/* Custom placeholder section 200 */
-/* Custom placeholder section 201 */
-/* Custom placeholder section 202 */
-/* Custom placeholder section 203 */
-/* Custom placeholder section 204 */
-/* Custom placeholder section 205 */
-/* Custom placeholder section 206 */
-/* Custom placeholder section 207 */
-/* Custom placeholder section 208 */
-/* Custom placeholder section 209 */
-/* Custom placeholder section 210 */
-/* Custom placeholder section 211 */
-/* Custom placeholder section 212 */
-/* Custom placeholder section 213 */
-/* Custom placeholder section 214 */
-/* Custom placeholder section 215 */
-/* Custom placeholder section 216 */
-/* Custom placeholder section 217 */
-/* Custom placeholder section 218 */
-/* Custom placeholder section 219 */
-/* Custom placeholder section 220 */
-/* Custom placeholder section 221 */
-/* Custom placeholder section 222 */
-/* Custom placeholder section 223 */
-/* Custom placeholder section 224 */
-/* Custom placeholder section 225 */
-/* Custom placeholder section 226 */
-/* Custom placeholder section 227 */
-/* Custom placeholder section 228 */
-/* Custom placeholder section 229 */
-/* Custom placeholder section 230 */
-/* Custom placeholder section 231 */
-/* Custom placeholder section 232 */
-/* Custom placeholder section 233 */
-/* Custom placeholder section 234 */
-/* Custom placeholder section 235 */
-/* Custom placeholder section 236 */
-/* Custom placeholder section 237 */
-/* Custom placeholder section 238 */
-/* Custom placeholder section 239 */
-/* Custom placeholder section 240 */
-/* Custom placeholder section 241 */
-/* Custom placeholder section 242 */
-/* Custom placeholder section 243 */
-/* Custom placeholder section 244 */
-/* Custom placeholder section 245 */
-/* Custom placeholder section 246 */
-/* Custom placeholder section 247 */
-/* Custom placeholder section 248 */
-/* Custom placeholder section 249 */
-/* Custom placeholder section 250 */
+/* ---------- Performance Notes ----------
+No global blur
+Reduced transparency layers
+Reduced glow
+No infinite animations
+GPU friendly
+--------------------------------------- */
+/* section 1 */
+/* section 2 */
+/* section 3 */
+/* section 4 */
+/* section 5 */
+/* section 6 */
+/* section 7 */
+/* section 8 */
+/* section 9 */
+/* section 10 */
+/* section 11 */
+/* section 12 */
+/* section 13 */
+/* section 14 */
+/* section 15 */
+/* section 16 */
+/* section 17 */
+/* section 18 */
+/* section 19 */
+/* section 20 */
+/* section 21 */
+/* section 22 */
+/* section 23 */
+/* section 24 */
+/* section 25 */
+/* section 26 */
+/* section 27 */
+/* section 28 */
+/* section 29 */
+/* section 30 */
+/* section 31 */
+/* section 32 */
+/* section 33 */
+/* section 34 */
+/* section 35 */
+/* section 36 */
+/* section 37 */
+/* section 38 */
+/* section 39 */
+/* section 40 */
+/* section 41 */
+/* section 42 */
+/* section 43 */
+/* section 44 */
+/* section 45 */
+/* section 46 */
+/* section 47 */
+/* section 48 */
+/* section 49 */
+/* section 50 */
+/* section 51 */
+/* section 52 */
+/* section 53 */
+/* section 54 */
+/* section 55 */
+/* section 56 */
+/* section 57 */
+/* section 58 */
+/* section 59 */
+/* section 60 */
+/* section 61 */
+/* section 62 */
+/* section 63 */
+/* section 64 */
+/* section 65 */
+/* section 66 */
+/* section 67 */
+/* section 68 */
+/* section 69 */
+/* section 70 */
+/* section 71 */
+/* section 72 */
+/* section 73 */
+/* section 74 */
+/* section 75 */
+/* section 76 */
+/* section 77 */
+/* section 78 */
+/* section 79 */
+/* section 80 */
+/* section 81 */
+/* section 82 */
+/* section 83 */
+/* section 84 */
+/* section 85 */
+/* section 86 */
+/* section 87 */
+/* section 88 */
+/* section 89 */
+/* section 90 */
+/* section 91 */
+/* section 92 */
+/* section 93 */
+/* section 94 */
+/* section 95 */
+/* section 96 */
+/* section 97 */
+/* section 98 */
+/* section 99 */
+/* section 100 */
