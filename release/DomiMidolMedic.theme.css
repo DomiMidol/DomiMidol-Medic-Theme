@@ -1,1 +1,10 @@
+/**
+ * @name DomiMidol Medic Theme
+ * @author DomiMidol
+ * @version 3.0.0-alpha
+ * @description Modern EMS Theme
+ */
 
+@import url("https://raw.githubusercontent.com/DomiMidol/DomiMidol-Medic-Theme/main/src/variables.css");
+
+@import url("https://raw.githubusercontent.com/DomiMidol/DomiMidol-Medic-Theme/main/src/base.css");
