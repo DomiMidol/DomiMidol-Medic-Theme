@@ -1,1 +1,124 @@
+/* ==========================================================
+   DomiMidol Medic Theme
+   members.css
+   ========================================================== */
 
+/* ---------- Mitgliederleiste ---------- */
+
+.membersWrap_c8ffbb,
+.members_c8ffbb {
+    background: rgba(18,18,18,.45) !important;
+}
+
+/* ---------- Rollenüberschrift ---------- */
+
+.membersGroup_c8ffbb {
+    color: var(--dm-accent);
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: .8px;
+    margin-top: 12px;
+}
+
+/* ---------- Ein Mitglied ---------- */
+
+.member_c8ffbb {
+    margin: 2px 8px;
+    border-radius: var(--dm-radius-small);
+    transition:
+        background-color var(--dm-speed),
+        transform var(--dm-speed);
+}
+
+/* ---------- Hover ---------- */
+
+.member_c8ffbb:hover {
+    background: rgba(211,47,47,.15);
+    transform: translateX(3px);
+}
+
+/* ---------- Ausgewähltes Mitglied ---------- */
+
+.selected__91a9d {
+    background: rgba(211,47,47,.25);
+}
+
+/* ---------- Avatar ---------- */
+
+.avatar__91a9d {
+    border-radius: 999px;
+}
+
+/* ---------- Benutzername ---------- */
+
+.username__703b9 {
+    color: var(--dm-text);
+    font-weight: 600;
+}
+
+/* ---------- Status ---------- */
+
+.activity__5d473,
+.subText__91a9d {
+    color: var(--dm-text-muted);
+}
+
+/* ---------- Bot Tag ---------- */
+
+.botTagRegular__82f07 {
+    background: var(--dm-accent);
+    border-radius: 6px;
+}
+
+/* ---------- Rollenfarbe ---------- */
+
+.role__48c1c {
+    border-radius: 8px;
+}
+
+/* ---------- Suchfeld ---------- */
+
+.searchBar_e0840f {
+    border-radius: var(--dm-radius-small);
+}
+
+/* ---------- Online ---------- */
+
+rect[fill="#23a55a"] {
+    filter: drop-shadow(0 0 4px rgba(35,165,90,.6));
+}
+
+/* ---------- Idle ---------- */
+
+rect[fill="#f0b232"] {
+    filter: drop-shadow(0 0 4px rgba(240,178,50,.6));
+}
+
+/* ---------- DND ---------- */
+
+rect[fill="#f23f43"] {
+    filter: drop-shadow(0 0 4px rgba(242,63,67,.6));
+}
+
+/* ---------- Streaming ---------- */
+
+rect[fill="#593695"] {
+    filter: drop-shadow(0 0 5px rgba(89,54,149,.6));
+}
+
+/* ---------- Voice-Mitglieder ---------- */
+
+.voiceSection__634ed {
+    margin-top: 8px;
+}
+
+/* ---------- Scrollbar ---------- */
+
+.members_c8ffbb::-webkit-scrollbar {
+    width: 6px;
+}
+
+.members_c8ffbb::-webkit-scrollbar-thumb {
+    background: rgba(211,47,47,.45);
+    border-radius: 999px;
+}
