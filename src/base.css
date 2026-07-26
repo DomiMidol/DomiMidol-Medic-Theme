@@ -1,1 +1,55 @@
+@import url("variables.css");
 
+/* Hintergrund */
+
+body {
+
+    background: var(--dm-background-image)
+        center/cover fixed;
+
+}
+
+/* Hauptfenster */
+
+.appMount {
+
+    background: transparent;
+
+}
+
+/* Transparente Container */
+
+.layer__960e4,
+.bg__12180,
+.container__133bf,
+.contentRegion__23e6b,
+.standardSidebarView__1129a {
+
+    background: transparent !important;
+
+}
+
+/* Karten */
+
+.visual-refresh .container__9293f,
+.visual-refresh .panels_c48ade {
+
+    background: var(--dm-surface);
+
+    backdrop-filter: blur(var(--dm-blur));
+
+    border-radius: var(--dm-radius);
+
+    box-shadow: var(--dm-shadow);
+
+}
+
+/* Buttons */
+
+button {
+
+    transition:
+        background-color var(--dm-speed),
+        color var(--dm-speed);
+
+}
