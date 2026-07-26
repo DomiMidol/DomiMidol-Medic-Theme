@@ -1,1 +1,154 @@
+/* ==========================================================
+   DomiMidol Medic Theme
+   settings.css
+   ========================================================== */
 
+/* ---------- Hintergrund ---------- */
+
+.standardSidebarView__23e6b,
+.contentRegion__23e6b,
+.contentColumn__23e6b {
+    background: transparent !important;
+}
+
+/* ---------- Einstellungs-Karten ---------- */
+
+.contentRegionScroller__23e6b {
+    padding: 24px;
+}
+
+/* ---------- Überschriften ---------- */
+
+h1,
+.title__49676 {
+    color: var(--dm-text);
+}
+
+h2,
+h3 {
+    color: var(--dm-accent);
+}
+
+/* ---------- Kategorien ---------- */
+
+.side_b3f026 .item_b3f026 {
+    border-radius: var(--dm-radius-small);
+    margin: 2px 8px;
+    transition:
+        background-color var(--dm-speed),
+        color var(--dm-speed);
+}
+
+.side_b3f026 .item_b3f026:hover {
+    background: rgba(211,47,47,.15);
+}
+
+.side_b3f026 .selected_b3f026 {
+    background: rgba(211,47,47,.28);
+    color: white;
+}
+
+/* ---------- Buttons ---------- */
+
+.lookFilled__201d5 {
+    border-radius: var(--dm-radius-small);
+    transition:
+        transform var(--dm-speed),
+        background-color var(--dm-speed);
+}
+
+.lookFilled__201d5:hover {
+    transform: translateY(-2px);
+}
+
+/* ---------- Inputs ---------- */
+
+.inputDefault__0f084,
+.input__0f084 {
+    border-radius: var(--dm-radius-small);
+}
+
+/* ---------- Textareas ---------- */
+
+.textArea__74017 {
+    border-radius: var(--dm-radius-small);
+}
+
+/* ---------- Dropdown ---------- */
+
+.select__3f413 {
+    border-radius: var(--dm-radius-small);
+}
+
+/* ---------- Switch ---------- */
+
+.container__87bf1 {
+    border-radius: 999px;
+}
+
+/* ---------- Slider ---------- */
+
+.barFill__00943 {
+    background: var(--dm-accent);
+}
+
+/* ---------- Checkbox ---------- */
+
+.checkbox__6fe66 {
+    border-radius: 6px;
+}
+
+/* ---------- Suchfeld ---------- */
+
+.searchBar__35e86 {
+    border-radius: var(--dm-radius-small);
+}
+
+/* ---------- Rollen ---------- */
+
+.role__48c1c {
+    border-radius: var(--dm-radius-small);
+}
+
+/* ---------- Cards ---------- */
+
+.cardPrimary__73069,
+.card__73069 {
+
+    border-radius: var(--dm-radius);
+
+    background: rgba(25,25,25,.45);
+
+}
+
+/* ---------- Hover ---------- */
+
+.card__73069:hover {
+
+    background: rgba(30,30,30,.60);
+
+}
+
+/* ---------- Trennlinien ---------- */
+
+.divider__46c3b {
+
+    opacity: .2;
+
+}
+
+/* ---------- Scrollbar ---------- */
+
+.contentRegionScroller__23e6b::-webkit-scrollbar {
+
+    width: 6px;
+
+}
+
+.contentRegionScroller__23e6b::-webkit-scrollbar-thumb {
+
+    background: rgba(211,47,47,.45);
+
+    border-radius: 999px;
+
+}
