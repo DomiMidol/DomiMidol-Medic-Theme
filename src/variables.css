@@ -1,1 +1,39 @@
+:root {
 
+    /* ========= Farben ========= */
+
+    --dm-accent: #d32f2f;
+    --dm-accent-hover: #ef5350;
+    --dm-background: #0f1115;
+    --dm-surface: rgba(20,20,20,.60);
+    --dm-surface-strong: rgba(20,20,20,.80);
+
+    --dm-text: #ffffff;
+    --dm-text-muted: #b5b5b5;
+
+    /* ========= Hintergrund ========= */
+
+    --dm-background-image:
+        url("https://raw.githubusercontent.com/DomiMidol/DomiMidol-Medic-Theme/main/assets/Background.png");
+
+    /* ========= Glas ========= */
+
+    --dm-blur: 8px;
+    --dm-opacity: .72;
+
+    /* ========= Radius ========= */
+
+    --dm-radius-small: 8px;
+    --dm-radius: 14px;
+    --dm-radius-large: 20px;
+
+    /* ========= Schatten ========= */
+
+    --dm-shadow:
+        0 6px 18px rgba(0,0,0,.25);
+
+    /* ========= Animation ========= */
+
+    --dm-speed: .18s;
+
+}
